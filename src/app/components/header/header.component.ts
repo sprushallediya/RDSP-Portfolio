@@ -11,6 +11,19 @@ import { CommonModule } from '@angular/common';
 export class HeaderComponent {
   activeSection: string = 'about';
 
+  toggleTheme(): void {
+  const current = document.documentElement.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+}
+
+ngOnInit(): void {
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+}
+
+
   @HostListener('window:scroll', [])
   onScroll(): void {
     const sections = ['about', 'education', 'extracurricular', 'projects', 'skills', 'contact'];
