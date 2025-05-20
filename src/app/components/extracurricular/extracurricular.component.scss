@@ -1,0 +1,13 @@
+.clubs {
+  list-style:none;
+  display:grid;
+  gap:var(--sp);
+
+  li {
+    padding:var(--sp);
+    border:1px solid #ddd;
+    border-radius:6px;
+  }
+  strong { display:block; }
+  span { font-size:.9rem; color:#666; margin-left:.25rem; }
+}

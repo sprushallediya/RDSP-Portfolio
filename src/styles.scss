@@ -1,0 +1,28 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
+  padding-block: 5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-inline: 1.5rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+:root {
+  --clr-bg-light: #f9f9f9;
+  --clr-bg-alt: #ffffff;
+  --clr-primary: #0d6efd;
+  --sp: 1.5rem;
+}

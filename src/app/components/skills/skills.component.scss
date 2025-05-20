@@ -1,0 +1,12 @@
+.chips {
+  display:flex;
+  flex-wrap:wrap;
+  gap:.5rem;
+
+  span {
+    padding:.35rem .75rem;
+    border:1px solid var(--clr-primary);
+    border-radius:50px;
+    font-size:.9rem;
+  }
+}
