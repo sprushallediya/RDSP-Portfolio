@@ -1,13 +1,14 @@
 <section id="projects" class="section container" style="background-color: var(--clr-bg-light);">
   <div data-aos="fade-up">
-  <h2>Projects</h2>
-  <div class="grid">
-    <app-project-card
-      *ngFor="let p of projects"
-      [title]="p.title"
-      [description]="p.description"
-      [link]="p.link">
-    </app-project-card>
-  </div>
+    <h2>Projects</h2>
+    <div class="grid">
+      <app-project-card
+        *ngFor="let p of projects"
+        [title]="p.title"
+        [description]="p.description"
+        [link]="p.link"
+        [image]="p.image">
+      </app-project-card>
+    </div>
   </div>
 </section>

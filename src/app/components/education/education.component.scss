@@ -1,8 +1,56 @@
-.edu-item {
-  display:flex;
-  justify-content:space-between;
-  padding:var(--sp) 0;
-  border-bottom:1px solid #eee;
-  h3 { margin-bottom:.25rem; }
-  .year { white-space:nowrap; font-weight:600; }
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 2rem;
+  border-left: 3px solid var(--clr-primary);
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -1.25rem;
+      width: 5px;
+      height: 5px;
+      background-color: var(--clr-primary);
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 0 0 3px var(--clr-primary);
+    }
+
+    .timeline-content {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .timeline-content:hover {
+      transform: translateY(-4px);
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #222;
+    }
+
+    p {
+      margin: 0.25rem 0 0.5rem;
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    .year {
+      display: block;
+      font-weight: 600;
+      color: #666;
+      font-size: 0.9rem;
+    }
+  }
 }

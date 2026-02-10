@@ -1,5 +1,6 @@
-<article class="card">
+<div class="project-card">
+  <img [src]="image" [alt]="title" class="project-image" />
   <h3>{{ title }}</h3>
   <p>{{ description }}</p>
-  <a *ngIf="link" [href]="link" target="_blank">View More →</a>
-</article>
+  <a [href]="link" target="_blank" rel="noopener noreferrer">View Code →</a>
+</div>

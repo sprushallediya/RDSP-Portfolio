@@ -9,7 +9,8 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./project-card.component.scss']
 })
 export class ProjectCardComponent {
-  @Input() title = '';
-  @Input() description = '';
-  @Input() link = '';
+  @Input() title!: string;
+  @Input() description!: string;
+  @Input() link!: string;
+  @Input() image!: string;
 }
